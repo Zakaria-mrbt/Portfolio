@@ -1,0 +1,133 @@
+@include googleFonts(Rubik++Mono++One);
+
+@media screen and (max-width:780px) {
+
+    header {
+        position: relative;
+        // Header Contact 
+        .header_contact {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Rubik Mono One';
+            margin: 5px 15px;
+            img {
+                width: 15px;
+                height: auto;
+                margin-right: 10px;
+            }
+            p {
+                margin-bottom: 5px;
+                color: white;
+                font-size: 8px;
+            }
+        }
+        // Header navbar
+        .header_nav {
+            font-family: 'Rubik Mono One';
+            
+            //Background navbar  
+            .blue {
+                background-color: #355AB9;
+                height: 150px;
+            }
+            // Logo navbar
+            .logo {
+                width: 150px;
+                height: auto;
+                position: absolute;
+                top: 90px;
+                left: 20px;
+            }
+            /*button burger*/
+            .burger {
+                width: 42px;
+                height: 24px;
+                right: 5%;
+                top: 55%;
+                cursor: pointer;
+                position: absolute;
+            }
+            .burger span {
+                width: 100%;
+                height: 3px;
+                background-color: #FF6C02;
+                position: absolute;
+                display: block;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: background-color 0.5s ease-in-out;
+            }
+            .burger span::after,
+            .burger span::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                background-color: black;
+                transition: transform 0.5s ease-in-out;
+            }
+            .burger span::before {
+                transform: translateY(-10px);
+                background-color: #FFFF00;
+            }
+            .burger span::after {
+                transform: translateY(10px);
+                background-color: #FFFF00;
+            }
+            .burger.active span {
+                background-color: transparent;
+            }
+            .burger.active span::before {
+                transform: translateY(0px) rotateZ(45deg);
+                background-color: #FFFF00;
+
+            }
+            .burger.active span::after {
+                transform: translateY(0px) rotateZ(-45deg);
+                background-color: #FF6C02;
+            }
+            // Navbar
+            .header_navbar {
+                position: absolute;
+                width: 100%;
+                height: auto;
+                background: #355ab94f;
+                background-image: url("common/image/flame-1864.png");
+                background-size: cover;
+                transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+                transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+                .header_navlinks,
+                a,
+                li {
+
+                    color: #FFFFFF;
+                    list-style: none;
+                    text-decoration: none;
+                    text-align: center;
+                    margin-top: 40px;
+
+                }
+                // Button
+                .hire {
+                    font-family: 'Rubik Mono One';
+                    font-size: 12px;
+                    color: #FFFFFF;
+                    margin: 40px;
+                    background-color: #FF6C02;
+                    width: 120px;
+                    height: 25px;
+                    border-radius: 50px;
+                    border: none;
+                    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+                }
+            }
+            .header_navbar.active {
+                height: auto;
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+    }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@mixin googleFonts($font){
+	@import url('https://fonts.googleapis.com/css?family=#{$font}');
+}
+$theme-colors: (
+  "bgbody": #16388E,
+  "bgzorange":#FF6C02,
+  "bgzyellow":#FFFF00,
+);
+
+
+@import"common/style/_place_holder.scss";
+@import"common/style/_header.scss";
+@import"common/style/_body.scss";
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";

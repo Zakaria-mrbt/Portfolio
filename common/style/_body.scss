@@ -1,0 +1,59 @@
+body {
+    font-family: 'Rubik Mono One';
+    main {
+        position: relative;
+        top: 50px;
+        transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+                
+        .home {
+            width: 100%;
+            height: auto;
+
+            .robot_ur1 {
+                position: absolute;
+                width: 40vw;
+                height: auto;
+                right: 0;
+            }
+            .robot_dr1{
+                position: relative;
+                width: 40vw;
+                height: auto;
+                left: 0;
+                top: 250px;
+            }
+            .home, h3, h2, p{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                color: #FFFFFF;
+                font-size: 18px;
+                top: 250px;
+            }
+            #carouselExampleControls{
+                
+                position: relative;
+                top: 200px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                
+            }
+            
+        }
+    }
+    main.active{
+        position: relative;
+        top: 500px;
+        
+    }
+    .about{
+        position: relative;
+        .blue {
+            background-color: #355AB9;
+            height: 150px;
+            margin-top: 300px;
+        }
+    }
+}
