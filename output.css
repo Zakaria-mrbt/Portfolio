@@ -145,18 +145,25 @@ body main .home {
 }
 body main .home .robot_ur1 {
   position: absolute;
-  width: 40vw;
+  max-width: 30vw;
+  min-width: 15vw;
   height: auto;
   right: 0;
 }
 body main .home .robot_dr1 {
   position: relative;
-  width: 40vw;
+  max-width: 30vw;
+  min-width: 15vw;
   height: auto;
   left: 0;
   top: 250px;
 }
-body main .home .home, body main .home h3, body main .home .h3, body main .home h2, body main .home .h2, body main .home p {
+body main .home .home,
+body main .home h2,
+body main .home .h2,
+body main .home h3,
+body main .home .h3,
+body main .home p {
   position: relative;
   display: flex;
   justify-content: center;
@@ -176,12 +183,145 @@ body main.active {
   top: 500px;
 }
 body .about {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+body .about .title {
+  justify-content: center;
+  text-align: center;
+}
+body .about .title h1, body .about .title .h1 {
+  font-weight: 900;
+  padding-top: 20px;
+}
+body .about .span_orange {
+  height: 5px;
+  width: 220px;
+  background-color: #FF6C02;
+  display: inline-block;
 }
 body .about .blue {
   background-color: #355AB9;
-  height: 150px;
+  height: auto;
   margin-top: 300px;
+  width: 100%;
+}
+body .about .img_about_1 {
+  max-width: 90vw;
+  min-width: 80vw;
+  height: auto;
+}
+body .about section {
+  padding-top: 100px;
+}
+body .about section h2, body .about section .h2 {
+  font-size: 24px;
+  font-weight: 900;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+body .about section p {
+  padding-bottom: 50px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+body .about section .img_about_2 {
+  position: relative;
+  max-width: 50vw;
+  height: auto;
+  left: 30%;
+  padding-bottom: 100px;
+}
+body .services {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  color: #ffffff;
+}
+body .services .title {
+  justify-content: center;
+  text-align: center;
+}
+body .services .title h1, body .services .title .h1 {
+  font-weight: 900;
+  padding-top: 20px;
+}
+body .services .span_orange {
+  height: 5px;
+  width: 220px;
+  background-color: #FF6C02;
+  display: inline-block;
+}
+body .services .services_main {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 40px;
+}
+body .services .services_main .cards_one {
+  display: block;
+  width: 250px;
+  height: 500px;
+  background: linear-gradient(#FFFFFF 50%, #FFC700 50%);
+  border-radius: 20px;
+  text-align: start;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.473));
+}
+body .services .services_main .cards_one .gif {
+  width: 200px;
+  height: auto;
+  position: relative;
+  left: 25px;
+}
+body .services .services_main .cards_one .cards_logo {
+  position: relative;
+  left: 75px;
+}
+body .services .services_main .cards_one h1, body .services .services_main .cards_one .h1 {
+  font-family: "Rubik Mono One";
+  font-size: 24px;
+  font-weight: 900;
+  margin-left: 10px;
+}
+body .services .services_main .cards_one p {
+  font-family: "Rubik Mono One";
+  font-size: 16px;
+  font-weight: 50;
+  margin-left: 10px;
+}
+body .services .services_main .cards_two {
+  display: block;
+  width: 250px;
+  height: 500px;
+  background: linear-gradient(#FFFFFF 50%, #FF6C02 50%);
+  border-radius: 20px;
+  text-align: start;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.473));
+}
+body .services .services_main .cards_two .gif {
+  width: 200px;
+  height: auto;
+  position: relative;
+  left: 25px;
+}
+body .services .services_main .cards_two .cards_logo {
+  position: relative;
+  left: 75px;
+}
+body .services .services_main .cards_two h1, body .services .services_main .cards_two .h1 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-left: 10px;
+}
+body .services .services_main .cards_two p {
+  font-family: "Rubik Mono One";
+  font-size: 16px;
+  font-weight: 50;
+  margin-left: 10px;
 }
 
 /*!
