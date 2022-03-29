@@ -178,83 +178,85 @@ body main .home #carouselExampleControls {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-body main.active {
+body main main.active {
   position: relative;
   top: 500px;
 }
-body .about {
+body main .about {
   display: flex;
   flex-direction: column;
   color: #ffffff;
 }
-body .about .title {
+body main .about .title {
   justify-content: center;
   text-align: center;
 }
-body .about .title h1, body .about .title .h1 {
+body main .about .title h1, body main .about .title .h1 {
   font-weight: 900;
   padding-top: 20px;
 }
-body .about .span_orange {
+body main .about .span_orange {
   height: 5px;
   width: 220px;
   background-color: #FF6C02;
   display: inline-block;
 }
-body .about .blue {
+body main .about .blue {
   background-color: #355AB9;
   height: auto;
   margin-top: 300px;
   width: 100%;
 }
-body .about .img_about_1 {
+body main .about .img_about_1 {
   max-width: 90vw;
   min-width: 80vw;
   height: auto;
 }
-body .about section {
+body main .about section {
   padding-top: 100px;
 }
-body .about section h2, body .about section .h2 {
+body main .about section h2, body main .about section .h2 {
   font-size: 24px;
   font-weight: 900;
   padding-bottom: 10px;
   padding-left: 20px;
 }
-body .about section p {
+body main .about section p {
   padding-bottom: 50px;
   padding-left: 20px;
+  padding-right: 20px;
   font-size: 18px;
   font-weight: 500;
+  text-align: justify;
 }
-body .about section .img_about_2 {
+body main .about section .img_about_2 {
   position: relative;
   max-width: 50vw;
   height: auto;
   left: 30%;
   padding-bottom: 100px;
 }
-body .services {
+body main .services {
   display: flex;
   text-align: center;
   flex-direction: column;
   color: #ffffff;
 }
-body .services .title {
+body main .services .title {
   justify-content: center;
   text-align: center;
 }
-body .services .title h1, body .services .title .h1 {
+body main .services .title h1, body main .services .title .h1 {
   font-weight: 900;
   padding-top: 20px;
 }
-body .services .span_orange {
+body main .services .span_orange {
   height: 5px;
   width: 220px;
   background-color: #FF6C02;
   display: inline-block;
 }
-body .services .services_main {
+body main .services .services_main {
   display: grid;
   justify-content: center;
   width: 100%;
@@ -262,7 +264,7 @@ body .services .services_main {
   grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
   gap: 40px;
 }
-body .services .services_main .cards_one {
+body main .services .services_main .cards_one {
   display: block;
   width: 250px;
   height: 500px;
@@ -271,29 +273,30 @@ body .services .services_main .cards_one {
   text-align: start;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.473));
 }
-body .services .services_main .cards_one .gif {
+body main .services .services_main .cards_one .gif {
   width: 200px;
   height: auto;
   position: relative;
   left: 25px;
 }
-body .services .services_main .cards_one .cards_logo {
+body main .services .services_main .cards_one .cards_logo {
   position: relative;
   left: 75px;
 }
-body .services .services_main .cards_one h1, body .services .services_main .cards_one .h1 {
+body main .services .services_main .cards_one h1, body main .services .services_main .cards_one .h1 {
   font-family: "Rubik Mono One";
   font-size: 24px;
   font-weight: 900;
   margin-left: 10px;
 }
-body .services .services_main .cards_one p {
+body main .services .services_main .cards_one p {
   font-family: "Rubik Mono One";
   font-size: 16px;
   font-weight: 50;
+  text-align: start;
   margin-left: 10px;
 }
-body .services .services_main .cards_two {
+body main .services .services_main .cards_two {
   display: block;
   width: 250px;
   height: 500px;
@@ -302,26 +305,51 @@ body .services .services_main .cards_two {
   text-align: start;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.473));
 }
-body .services .services_main .cards_two .gif {
+body main .services .services_main .cards_two .gif {
   width: 200px;
   height: auto;
   position: relative;
   left: 25px;
 }
-body .services .services_main .cards_two .cards_logo {
+body main .services .services_main .cards_two .cards_logo {
   position: relative;
   left: 75px;
 }
-body .services .services_main .cards_two h1, body .services .services_main .cards_two .h1 {
+body main .services .services_main .cards_two h1, body main .services .services_main .cards_two .h1 {
   font-size: 24px;
   font-weight: 900;
   margin-left: 10px;
 }
-body .services .services_main .cards_two p {
+body main .services .services_main .cards_two p {
   font-family: "Rubik Mono One";
   font-size: 16px;
   font-weight: 50;
   margin-left: 10px;
+}
+body main .portfolio {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+body main .portfolio .title {
+  justify-content: center;
+  text-align: center;
+}
+body main .portfolio .title h1, body main .portfolio .title .h1 {
+  font-weight: 900;
+  padding-top: 20px;
+}
+body main .portfolio .span_orange {
+  height: 5px;
+  width: 220px;
+  background-color: #FF6C02;
+  display: inline-block;
+}
+body main .portfolio .blue {
+  background-color: #355AB9;
+  height: auto;
+  margin-top: 300px;
+  width: 100%;
 }
 
 /*!
