@@ -1,14 +1,16 @@
 @include googleFonts(Rubik++Mono++One);
+@include googleFonts(Roboto);
 
 @media screen and (max-width:780px) {
 
     header {
+        font-family: 'roboto';
         position: relative;
         // Header Contact 
         .header_contact {
             display: flex;
             flex-direction: column;
-            font-family: 'Rubik Mono One';
+            font-family: 'roboto';
             margin: 5px 15px;
             img {
                 width: 15px;
@@ -18,12 +20,12 @@
             p {
                 margin-bottom: 5px;
                 color: white;
-                font-size: 8px;
+                font-size: 18px;
             }
         }
         // Header navbar
         .header_nav {
-            font-family: 'Rubik Mono One';
+            
             
             //Background navbar  
             .blue {
@@ -111,7 +113,7 @@
                 }
                 // Button
                 .hire {
-                    font-family: 'Rubik Mono One';
+                    
                     font-size: 12px;
                     color: #FFFFFF;
                     margin: 40px;

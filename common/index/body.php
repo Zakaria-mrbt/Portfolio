@@ -2,8 +2,9 @@
   <main>
     <div class="home">
       <img src="common/image/flame-280r.png" alt="ur1" class="robot_ur1"></img>
-      <h3>Développeur Web et Web mobile</h3>
+
       <div class="container-fluid">
+        <h2>Développeur Web et Web mobile</h2>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -25,15 +26,15 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+        <h2>Création de sites web</h2>
+        <p>Site vitrine, corporate, événementiel, e-commerce</p>
       </div>
 
-      <h2>Création de sites web</h2>
-      <p>Site vitrine, corporate, événementiel, e-commerce</p>
       <img src="common/image/flame-victory-r" alt="flame-victory-r" class="robot_dr1">
     </div>
 
     <div class="about">
-      <div class="blue">
+      <div class="blue_main">
         <div class="title">
           <h1>About
           </h1>
@@ -83,7 +84,15 @@
         <div class="span_orange"></div>
       </div>
       <div class="services_main">
+        <div class="background_services">
+          <img src="common/image/flame-business-is-going-great.png" alt="">
+          <img src="common/image/flame-meditation.png" alt="">
+          <img src="common/image/flame-769.png" alt="">
+          <img src="common/image/flame-financial-analyst-robot.png" alt="">
+
+        </div>
         <div class="cards_one">
+
           <img src="common/image/flame-success.gif" alt="flame-success" class="gif">
 
           <img src="common/image/cards1.png" alt="cards1" class="cards_logo">
@@ -130,17 +139,95 @@
     </div>
 
     <div class="portfolio">
-      <div class="blue">
-      <div class="title">
+      <div class="blue_main">
+        <div class="title">
           <h1>Portfolio
           </h1>
           <div class="span_orange"></div>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestias ea earum unde neque possimus minima ex. Amet, numquam excepturi.</p>
+        <div class="container-fluid">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="common/image/site1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="common/image/site1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="common/image/site1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
-
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
       </div>
 
+    </div>
+
+    </div>
+    <div class="contact_me">
+      <img src="common/image/flame-1849.png" alt="">
+
+      <form action="" method="post" class="form_contat">
+        <div class="form_nom_prenom">
+
+          <label for="lastname">
+            
+
+            <input type="text" name="lastname" id="lastname" required="required" placeholder="  Votre nom" class="name_lastname" >
+          </label>
+
+          <label for="name" >
+            
+            <input type="text" name="name" id="name" required="required" placeholder="  Votre prénom" class="name_lastname">
+          </label>
+
+        </div>
+        <div class="form_email_phone">
+
+          <label for="email">
+<input type="email" name="email" id="email" required placeholder=" Votre email"class="mail">
+          </label>
+
+          <label for="number">
+             <input type="number" name="number" id="number" required placeholder=" Votre numéro de téléphone "class="phone"> 
+            </label>
+        </div>
+          <div class="form_message">
+            
+            <label for="text" class="message" >
+              <input type="text" name="text" id="text" required placeholder=" Ecriver votre message !" class="message">
+            </label>
+          
+        </div>
+
+      </form>
     </div>
   </main>
   <script src="common/js/app.js"></script>

@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Rubik+Mono+One");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 * {
   margin: 0;
   padding: 0;
@@ -12,12 +13,13 @@ body {
 
 @media screen and (max-width: 780px) {
   header {
+    font-family: "roboto";
     position: relative;
   }
   header .header_contact {
     display: flex;
     flex-direction: column;
-    font-family: "Rubik Mono One";
+    font-family: "roboto";
     margin: 5px 15px;
   }
   header .header_contact img {
@@ -28,10 +30,9 @@ body {
   header .header_contact p {
     margin-bottom: 5px;
     color: white;
-    font-size: 8px;
+    font-size: 18px;
   }
   header .header_nav {
-    font-family: "Rubik Mono One";
     /*button burger*/
   }
   header .header_nav .blue {
@@ -113,7 +114,6 @@ header .header_nav .header_navbar li {
     margin-top: 40px;
   }
   header .header_nav .header_navbar .hire {
-    font-family: "Rubik Mono One";
     font-size: 12px;
     color: #FFFFFF;
     margin: 40px;
@@ -142,6 +142,7 @@ body main {
 body main .home {
   width: 100%;
   height: auto;
+  font-family: "Rubik Mono One";
 }
 body main .home .robot_ur1 {
   position: absolute;
@@ -156,43 +157,42 @@ body main .home .robot_dr1 {
   min-width: 15vw;
   height: auto;
   left: 0;
-  top: 250px;
+  top: 170px;
 }
 body main .home .home,
 body main .home h2,
 body main .home .h2,
 body main .home h3,
-body main .home .h3,
-body main .home p {
+body main .home .h3 {
   position: relative;
   display: flex;
   justify-content: center;
   text-align: center;
   color: #FFFFFF;
   font-size: 18px;
-  top: 250px;
+  padding-bottom: 50px;
 }
-body main .home #carouselExampleControls {
-  position: relative;
-  top: 200px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+body main .home p {
+  padding-top: 10px;
+  justify-content: center;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 12px;
 }
-body main main.active {
-  position: relative;
-  top: 500px;
+body main .home .container-fluid, body main .home .container-xxl, body main .home .container-xl, body main .home .container-lg, body main .home .container-md, body main .home .container-sm {
+  padding-top: 450px;
 }
 body main .about {
   display: flex;
   flex-direction: column;
   color: #ffffff;
+  font-family: "Rubik Mono One";
 }
 body main .about .title {
   justify-content: center;
   text-align: center;
 }
 body main .about .title h1, body main .about .title .h1 {
-  font-weight: 900;
   padding-top: 20px;
 }
 body main .about .span_orange {
@@ -201,11 +201,12 @@ body main .about .span_orange {
   background-color: #FF6C02;
   display: inline-block;
 }
-body main .about .blue {
+body main .about .blue_main {
   background-color: #355AB9;
   height: auto;
-  margin-top: 300px;
+  margin-top: 100px;
   width: 100%;
+  padding-top: 50px;
 }
 body main .about .img_about_1 {
   max-width: 90vw;
@@ -216,8 +217,7 @@ body main .about section {
   padding-top: 100px;
 }
 body main .about section h2, body main .about section .h2 {
-  font-size: 24px;
-  font-weight: 900;
+  font-size: 21px;
   padding-bottom: 10px;
   padding-left: 20px;
 }
@@ -225,8 +225,7 @@ body main .about section p {
   padding-bottom: 50px;
   padding-left: 20px;
   padding-right: 20px;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 12px;
   text-align: justify;
 }
 body main .about section .img_about_2 {
@@ -240,6 +239,8 @@ body main .services {
   display: flex;
   text-align: center;
   flex-direction: column;
+  font-family: "Rubik Mono One";
+  padding-top: 100px;
   color: #ffffff;
 }
 body main .services .title {
@@ -247,7 +248,6 @@ body main .services .title {
   text-align: center;
 }
 body main .services .title h1, body main .services .title .h1 {
-  font-weight: 900;
   padding-top: 20px;
 }
 body main .services .span_orange {
@@ -259,14 +259,24 @@ body main .services .span_orange {
 body main .services .services_main {
   display: grid;
   justify-content: center;
-  width: 100%;
   margin-top: 100px;
+  width: 100%;
   grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
   gap: 40px;
 }
+body main .services .services_main .background_services {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+body main .services .services_main .background_services img {
+  max-width: 100%;
+  margin-top: 100px;
+  opacity: 40%;
+}
 body main .services .services_main .cards_one {
   display: block;
-  width: 250px;
+  width: 300px;
   height: 500px;
   background: linear-gradient(#FFFFFF 50%, #FFC700 50%);
   border-radius: 20px;
@@ -277,28 +287,28 @@ body main .services .services_main .cards_one .gif {
   width: 200px;
   height: auto;
   position: relative;
-  left: 25px;
+  left: 50px;
 }
 body main .services .services_main .cards_one .cards_logo {
   position: relative;
-  left: 75px;
+  left: 105px;
 }
 body main .services .services_main .cards_one h1, body main .services .services_main .cards_one .h1 {
   font-family: "Rubik Mono One";
-  font-size: 24px;
-  font-weight: 900;
+  font-size: 21px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   margin-left: 10px;
 }
 body main .services .services_main .cards_one p {
   font-family: "Rubik Mono One";
-  font-size: 16px;
-  font-weight: 50;
+  font-size: 12px;
   text-align: start;
   margin-left: 10px;
 }
 body main .services .services_main .cards_two {
   display: block;
-  width: 250px;
+  width: 300px;
   height: 500px;
   background: linear-gradient(#FFFFFF 50%, #FF6C02 50%);
   border-radius: 20px;
@@ -309,34 +319,36 @@ body main .services .services_main .cards_two .gif {
   width: 200px;
   height: auto;
   position: relative;
-  left: 25px;
+  left: 50px;
 }
 body main .services .services_main .cards_two .cards_logo {
   position: relative;
-  left: 75px;
+  left: 105px;
 }
 body main .services .services_main .cards_two h1, body main .services .services_main .cards_two .h1 {
-  font-size: 24px;
-  font-weight: 900;
+  font-family: "Rubik Mono One";
+  font-size: 21px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   margin-left: 10px;
 }
 body main .services .services_main .cards_two p {
   font-family: "Rubik Mono One";
-  font-size: 16px;
-  font-weight: 50;
+  font-size: 12px;
+  text-align: start;
   margin-left: 10px;
 }
 body main .portfolio {
   display: flex;
   flex-direction: column;
   color: #ffffff;
+  font-family: "Rubik Mono One";
 }
 body main .portfolio .title {
   justify-content: center;
   text-align: center;
 }
 body main .portfolio .title h1, body main .portfolio .title .h1 {
-  font-weight: 900;
   padding-top: 20px;
 }
 body main .portfolio .span_orange {
@@ -345,11 +357,67 @@ body main .portfolio .span_orange {
   background-color: #FF6C02;
   display: inline-block;
 }
-body main .portfolio .blue {
+body main .portfolio .blue_main {
   background-color: #355AB9;
   height: auto;
-  margin-top: 300px;
+  margin-top: 100px;
   width: 100%;
+  padding-top: 50px;
+}
+body main .portfolio .blue_main .container-fluid, body main .portfolio .blue_main .container-xxl, body main .portfolio .blue_main .container-xl, body main .portfolio .blue_main .container-lg, body main .portfolio .blue_main .container-md, body main .portfolio .blue_main .container-sm {
+  padding-top: 100px;
+}
+body main .portfolio .blue_main .container-fluid p, body main .portfolio .blue_main .container-xxl p, body main .portfolio .blue_main .container-xl p, body main .portfolio .blue_main .container-lg p, body main .portfolio .blue_main .container-md p, body main .portfolio .blue_main .container-sm p, body main .portfolio .blue_main .container-fluid h5, body main .portfolio .blue_main .container-xxl h5, body main .portfolio .blue_main .container-xl h5, body main .portfolio .blue_main .container-lg h5, body main .portfolio .blue_main .container-md h5, body main .portfolio .blue_main .container-sm h5, body main .portfolio .blue_main .container-fluid .h5, body main .portfolio .blue_main .container-xxl .h5, body main .portfolio .blue_main .container-xl .h5, body main .portfolio .blue_main .container-lg .h5, body main .portfolio .blue_main .container-md .h5, body main .portfolio .blue_main .container-sm .h5 {
+  background-color: #FF6C02;
+}
+body main .contact_me img {
+  width: 200px;
+  height: auto;
+}
+body main .contact_me form .form_nom_prenom {
+  width: 100%;
+}
+body main .contact_me form .name_lastname {
+  background-image: url("common/image/icons8-test-account-50.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 5px 0px;
+  padding-left: 40px;
+  height: 30px;
+  border-radius: 20px;
+  border-color: #FF6C02;
+}
+body main .contact_me form .name_lastname input {
+  width: 300px;
+}
+body main .contact_me form .mail {
+  background-image: url("common/image/icons8-at-sign-50.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 5px 0px;
+  padding-left: 40px;
+  height: 30px;
+  border-radius: 20px;
+  border-color: #FF6C02;
+}
+body main .contact_me form .phone {
+  background-image: url("common/image/icons8-phone-50.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 5px 0px;
+  padding-left: 40px;
+  height: 30px;
+  border-radius: 20px;
+  border-color: #FF6C02;
+}
+body main .contact_me form .message {
+  padding-left: 40px;
+  border-radius: 20px;
+  border-color: #FF6C02;
+}
+body main.active {
+  position: relative;
+  top: 500px;
 }
 
 /*!
