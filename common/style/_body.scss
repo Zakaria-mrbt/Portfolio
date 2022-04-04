@@ -1,11 +1,6 @@
-body {
-    font-family: 'Rubik Mono One';
-    main {
-        position: relative;
-        top: 50px;
-        transition: all 0.4s ease-in-out;
-        -webkit-transition: all 0.4s ease-in-out;
-
+@media screen and (min-width:781px) {
+    body {
+        font-family: 'Rubik Mono One';
         .home {
             width: 100%;
             height: auto;
@@ -13,15 +8,15 @@ body {
 
             .robot_ur1 {
                 position: absolute;
-                max-width: 30vw;
-                min-width: 15vw;
+                max-width: 15vw;
+                min-width: 7.5vw;
                 height: auto;
                 right: 0;
             }
             .robot_dr1 {
                 position: relative;
-                max-width: 30vw;
-                min-width: 15vw;
+                max-width: 15vw;
+                min-width: 7.5vw;
                 height: auto;
                 left: 0;
                 top: 170px;
@@ -48,15 +43,19 @@ body {
             }
             .container-fluid {
                 padding-top: 450px;
-            }
-        }
+                width: 40%;
 
+            }
+
+        }
         .about {
             display: flex;
             flex-direction: column;
             color: #ffffff;
             font-family: 'Rubik Mono One';
-            
+            margin-top: 100px;
+
+            padding: 0 400px;
 
             .title {
                 justify-content: center;
@@ -76,15 +75,20 @@ body {
 
             .blue_main {
                 background-color: #355AB9;
+
                 height: auto;
                 margin-top: 100px;
                 width: 100%;
                 padding-top: 50px;
 
             }
+            .img_about {
+                display: flex;
+                justify-content: center;
+            }
             .img_about_1 {
-                max-width: 90vw;
-                min-width: 80vw;
+                max-width: 40vw;
+                min-width: 20vw;
                 height: auto;
 
             }
@@ -108,10 +112,10 @@ body {
                 .img_about_2 {
 
                     position: relative;
-                    max-width: 50vw;
+                    max-width: 10vw;
 
                     height: auto;
-                    left: 30%;
+
                     padding-bottom: 100px;
 
                 }
@@ -140,30 +144,30 @@ body {
                 display: inline-block;
             }
             .services_main {
-                display: grid;
-                justify-content: center;
+
                 margin-top: 100px;
                 width: 100%;
-                grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
-                gap: 40px;
 
-                .background_services{
-                   position: absolute;
+                .background_services {
+                    position: absolute;
                     width: 100%;
                     height: auto;
-                   img{
-                    max-width: 100%;
-                    margin-top: 100px;
-                    
-                    
-                    
-                    opacity: 40%;   
-                   } 
-                    
-                    
+                    img {
+                        max-width: 100%;
+                        margin-top: 100px;
+
+                        opacity: 40%;
+                    }
+
                 }
-                
-                
+
+                .cards {
+                    display: grid;
+
+                    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+
+                }
+
                 .cards_one {
                     display: block;
                     width: 300px;
@@ -240,119 +244,431 @@ body {
 
             }
         }
-        .portfolio {
-            display: flex;
-            flex-direction: column;
-            color: #ffffff;
-            font-family: 'Rubik Mono One';
-            
-
-            .title {
-                justify-content: center;
-                text-align: center;
-                h1 {
-
-                    padding-top: 20px;
-                }
-            }
-
-            .span_orange {
-                height: 5px;
-                width: 220px;
-                background-color: #FF6C02;
-                display: inline-block;
-            }
-
-            .blue_main {
-                background-color: #355AB9;
-                height: auto;
-                margin-top: 100px;
-                width: 100%;
-                padding-top: 50px;
-                
-                .container-fluid{
-                    
-                    padding-top: 100px;
-                    p, h5{
-                        
-                        
-                        background-color: #FF6C02;
-                    }
-                }
-            }
-
-
-        }
-
-
-       .contact_me{
-         img{
-             width: 200px;
-             height: auto;
-            
-         }  
-         form{
-
-            .form_nom_prenom{
-                
-                width: 100%;
-            }
-          .name_lastname{
-              background-image: url("common/image/icons8-test-account-50.png");
-              background-repeat: no-repeat ;
-              background-size: 30px;
-              background-position: 5px 0px;
-              padding-left: 40px;
-              height: 30px;
-              border-radius: 20px;
-              border-color: #FF6C02;
-
-        
-             input{
-                width: 300px;
-             }
-            }   
-            .mail{
-                background-image: url("common/image/icons8-at-sign-50.png");
-                background-repeat: no-repeat ;
-                background-size: 30px;
-                background-position: 5px 0px;
-                padding-left: 40px;
-                height: 30px;
-                border-radius: 20px;
-                border-color: #FF6C02; 
-            }
-            .phone{
-                background-image: url("common/image/icons8-phone-50.png");
-                background-repeat: no-repeat ;
-                background-size: 30px;
-                background-position: 5px 0px;
-                padding-left: 40px;
-                height: 30px;
-                border-radius: 20px;
-                border-color: #FF6C02; 
-            }
-            .message{
-                
-                padding-left: 40px;
-                
-                border-radius: 20px;
-                border-color: #FF6C02; 
-            }
-         }
-          
-             
-         
-       }
-       
-        
 
     }
 
+}
 
-    main.active {
-        position: relative;
-        top: 500px;
+@media screen and (max-width:780px) {
+    body {
+        font-family: 'Rubik Mono One';
+        main {
+            position: relative;
+            top: 50px;
+            transition: all 0.4s ease-in-out;
+            -webkit-transition: all 0.4s ease-in-out;
 
+            .home {
+                width: 100%;
+                height: auto;
+                font-family: 'Rubik Mono One';
+
+                .robot_ur1 {
+                    position: absolute;
+                    max-width: 30vw;
+                    min-width: 15vw;
+                    height: auto;
+                    right: 0;
+                }
+                .robot_dr1 {
+                    position: relative;
+                    max-width: 30vw;
+                    min-width: 15vw;
+                    height: auto;
+                    left: 0;
+                    top: 170px;
+                }
+
+                .home,
+                h2,
+                h3 {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    color: #FFFFFF;
+                    font-size: 18px;
+                    padding-bottom: 50px;
+
+                }
+                p {
+                    padding-top: 10px;
+                    justify-content: center;
+                    text-align: center;
+                    color: #FFFFFF;
+                    font-size: 12px;
+                }
+                .container-fluid {
+                    padding-top: 450px;
+                }
+            }
+
+            .about {
+                display: flex;
+                flex-direction: column;
+                color: #ffffff;
+                font-family: 'Rubik Mono One';
+
+                .title {
+                    justify-content: center;
+                    text-align: center;
+                    h1 {
+
+                        padding-top: 20px;
+                    }
+                }
+
+                .span_orange {
+                    height: 5px;
+                    width: 220px;
+                    background-color: #FF6C02;
+                    display: inline-block;
+                }
+
+                .blue_main {
+                    background-color: #355AB9;
+                    height: auto;
+                    margin-top: 100px;
+                    width: 100%;
+                    padding-top: 50px;
+
+                }
+                .img_about_1 {
+                    max-width: 90vw;
+                    min-width: 80vw;
+                    height: auto;
+
+                }
+                section {
+                    padding-top: 100px;
+
+                    h2 {
+
+                        font-size: 21px;
+                        padding-bottom: 10px;
+                        padding-left: 20px;
+                    }
+                    p {
+                        padding-bottom: 50px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        font-size: 12px;
+                        text-align: justify;
+                    }
+
+                    .img_about_2 {
+
+                        position: relative;
+                        max-width: 50vw;
+
+                        height: auto;
+                        left: 30%;
+                        padding-bottom: 100px;
+
+                    }
+                }
+            }
+            .services {
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+                font-family: 'Rubik Mono One';
+                padding-top: 100px;
+
+                color: #ffffff;
+                .title {
+                    justify-content: center;
+                    text-align: center;
+                    h1 {
+
+                        padding-top: 20px;
+                    }
+                }
+                .span_orange {
+                    height: 5px;
+                    width: 220px;
+                    background-color: #FF6C02;
+                    display: inline-block;
+                }
+                .services_main {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 100px;
+                    width: 100%;
+
+                    .background_services {
+                        position: absolute;
+                        width: 100%;
+                        height: auto;
+                        img {
+                            max-width: 100%;
+                            margin-top: 100px;
+
+                            opacity: 40%;
+                        }
+
+                    }
+
+                    .cards {
+
+                        display: grid;
+                        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+                        gap: 40px;
+
+                        .cards_one {
+                            display: block;
+                            width: 300px;
+                            height: 500px;
+                            background: linear-gradient(#FFFFFF 50%,#FFC700 50%);
+                            border-radius: 20px;
+                            text-align: start;
+                            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.473));
+                            .gif {
+                                width: 200px;
+                                height: auto;
+                                position: relative;
+                                left: 50px;
+
+                            }
+                            .cards_logo {
+                                position: relative;
+
+                                left: 105px;
+
+                            }
+                            h1 {
+                                font-family: 'Rubik Mono One';
+                                font-size: 21px;
+                                margin-top: 20px;
+                                margin-bottom: 20px;
+                                margin-left: 10px;
+                            }
+                            p {
+                                font-family: 'Rubik Mono One';
+                                font-size: 12px;
+
+                                text-align: start;
+                                margin-left: 10px;
+
+                            }
+                        }
+                        .cards_two {
+                            display: block;
+                            width: 300px;
+                            height: 500px;
+                            background: linear-gradient(#FFFFFF 50%,#FF6C02 50%);
+                            border-radius: 20px;
+                            text-align: start;
+                            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.473));
+                            .gif {
+                                width: 200px;
+                                height: auto;
+                                position: relative;
+                                left: 50px;
+
+                            }
+                            .cards_logo {
+                                position: relative;
+
+                                left: 105px;
+
+                            }
+                            h1 {
+                                font-family: 'Rubik Mono One';
+                                font-size: 21px;
+                                margin-top: 20px;
+                                margin-bottom: 20px;
+                                margin-left: 10px;
+                            }
+                            p {
+                                font-family: 'Rubik Mono One';
+                                font-size: 12px;
+
+                                text-align: start;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+
+                }
+            }
+            .portfolio {
+                display: flex;
+                flex-direction: column;
+                color: #ffffff;
+                font-family: 'Rubik Mono One';
+
+                .title {
+                    justify-content: center;
+                    text-align: center;
+                    h1 {
+
+                        padding-top: 20px;
+                    }
+                }
+
+                .span_orange {
+                    height: 5px;
+                    width: 220px;
+                    background-color: #FF6C02;
+                    display: inline-block;
+                }
+
+                .blue_main {
+                    background-color: #355AB9;
+                    height: auto;
+                    margin-top: 100px;
+                    width: 100%;
+                    padding-top: 50px;
+
+                    .container-fluid {
+
+                        padding-top: 100px;
+                        h5,
+                        p {
+
+                            background-color: #FF6C02;
+                        }
+                    }
+                }
+
+            }
+
+            .contact_me {
+                display: flex;
+                flex-direction: column;
+                color: #ffffff;
+                font-family: 'Rubik Mono One';
+
+                .title {
+                    justify-content: center;
+                    text-align: center;
+                    h1 {
+                        font-size: 21px;
+                        padding-top: 20px;
+                        font-family: 'Rubik Mono One';
+                    }
+                }
+
+                .span_orange {
+                    height: 5px;
+                    width: 220px;
+                    background-color: #FF6C02;
+                    display: inline-block;
+                }
+                img {
+                    width: 200px;
+                    height: auto;
+
+                }
+                .grid_contact {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                }
+                form {
+                    font-size: 14px;
+                    .form_nom_prenom {
+                        margin: 30px;
+                        width: auto;
+                    }
+                    .name_lastname {
+                        background-image: url("common/image/icons8-test-account-50.png");
+                        background-repeat: no-repeat;
+                        background-size: 30px;
+                        background-position: 5px 0;
+                        padding-left: 40px;
+                        height: 30px;
+                        border-radius: 20px;
+                        border-color: #FF6C02;
+                        font-size: 10px;
+
+                        input {
+                            width: 300px;
+                        }
+                    }
+
+                    .form_email_phone {
+
+                        margin: 30px;
+
+                        .mail {
+                            background-image: url("common/image/icons8-at-sign-50.png");
+                            background-repeat: no-repeat;
+                            background-size: 30px;
+                            background-position: 5px 0;
+                            padding-left: 40px;
+                            height: 30px;
+                            border-radius: 20px;
+                            border-color: #FF6C02;
+                            font-size: 10px;
+                        }
+                        .phone {
+                            background-image: url("common/image/icons8-phone-50.png");
+                            background-repeat: no-repeat;
+                            background-size: 30px;
+                            background-position: 5px 0;
+                            padding-left: 40px;
+                            height: 30px;
+                            border-radius: 20px;
+                            border-color: #FF6C02;
+                            font-size: 10px;
+                        }
+                    }
+                    .form_message {
+
+                        .message {
+                            width: 90vw;
+                            font-size: 10px;
+                            border-radius: 20px;
+                            border-color: #FF6C02;
+                            margin-right: 50px;
+                            padding-left: 20px;
+                            padding-top: 10px;
+                            margin-bottom: 20px;
+                        }
+
+                    }
+                    .condition{
+                        margin: 20px;
+                    }
+                    .form_button_case {
+                        color: #FFFFFF;
+                        font-size: 10px;
+
+                        .case {
+                            color: #FFFFFF;
+                            background-color: #FF6C02;
+                            border: none;
+                            border-radius: 20px;
+
+                        }
+                        .btn_contact {
+                            color: #FFFFFF;
+                            background-color: #FF6C02;
+                            border: none;
+                            border-radius: 20px;
+                            width: 130px;
+                            height: 30px;
+                            font-size: 16px;
+                            margin: 20px;
+                        }
+                    }
+                    .ifg {
+
+                        position: absolute;
+                        right: 0;
+
+                    }
+                }
+
+            }
+
+        }
+
+        main.active {
+            position: relative;
+            top: 500px;
+
+        }
     }
 }

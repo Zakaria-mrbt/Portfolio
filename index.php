@@ -13,6 +13,7 @@
 <?php
 include("common/index/header.php");
 include("common/index/body.php");
+include("common/index/footer.php");
 ?>
 
 </html>

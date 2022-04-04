@@ -2,7 +2,7 @@
   <main>
     <div class="home">
       <img src="common/image/flame-280r.png" alt="ur1" class="robot_ur1"></img>
-
+      <div class="blue_main">
       <div class="container-fluid">
         <h2>Développeur Web et Web mobile</h2>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -29,7 +29,7 @@
         <h2>Création de sites web</h2>
         <p>Site vitrine, corporate, événementiel, e-commerce</p>
       </div>
-
+</div>
       <img src="common/image/flame-victory-r" alt="flame-victory-r" class="robot_dr1">
     </div>
 
@@ -65,8 +65,10 @@
               attentes des futur client et de répondre le plus précisément au besoin/probleme
               rencontré.
             </p>
-
-            <img src="common/image/flame-281.png" alt="flame-281" class="img_about_2">
+<div class="img_about">
+<img src="common/image/flame-281.png" alt="flame-281" class="img_about_2">
+</div>
+            
             <p>
               Du site vitrine au site e-commerce ou a des projet plus complexe, je vous
               propose un développement qui réponde a toutes vos attentes et besoins.
@@ -91,50 +93,54 @@
           <img src="common/image/flame-financial-analyst-robot.png" alt="">
 
         </div>
+        <div class="cards">
         <div class="cards_one">
 
-          <img src="common/image/flame-success.gif" alt="flame-success" class="gif">
+<img src="common/image/flame-success.gif" alt="flame-success" class="gif">
 
-          <img src="common/image/cards1.png" alt="cards1" class="cards_logo">
-          <h1>Interface d'administration</h1>
-          <p>Outils spécifiques au bon fonctionnement de votre entreprise.</p>
+<img src="common/image/cards1.png" alt="cards1" class="cards_logo">
+<h1>Interface d'administration</h1>
+<p>Outils spécifiques au bon fonctionnement de votre entreprise.</p>
 
-        </div>
-        <div class="cards_two">
-          <img src="common/image/flame-design-science.gif" alt="flame-success" class="gif">
-          <img src="common/image/cards2.png" alt="cards2" class="cards_logo">
-          <h1>GRAPHIQUE ET WEBDESIGN</h1>
-          <p>Logo, template WEB, newsletters</p>
-        </div>
-        <div class="cards_one">
-          <img src="common/image/flame-82.gif" alt="flame-success" class="gif">
+</div>
+<div class="cards_two">
+<img src="common/image/flame-design-science.gif" alt="flame-success" class="gif">
+<img src="common/image/cards2.png" alt="cards2" class="cards_logo">
+<h1>GRAPHIQUE ET WEBDESIGN</h1>
+<p>Logo, template WEB, newsletters</p>
+</div>
+<div class="cards_one">
+<img src="common/image/flame-82.gif" alt="flame-success" class="gif">
 
-          <img src="common/image/cards3.png" alt="cards3" class="cards_logo">
-          <h1>Interface d'administration</h1>
-          <p>Outils spécifiques au bon fonctionnement de votre entreprise.</p>
+<img src="common/image/cards3.png" alt="cards3" class="cards_logo">
+<h1>Interface d'administration</h1>
+<p>Outils spécifiques au bon fonctionnement de votre entreprise.</p>
 
-        </div>
-        <div class="cards_two">
-          <img src="common/image/flame-searching.gif" alt="flame-success" class="gif">
-          <img src="common/image/cards4.png" alt="cards4" class="cards_logo">
-          <h1>GRAPHIQUE ET WEBDESIGN</h1>
-          <p>Logo, template WEB, newsletters</p>
-        </div>
-        <div class="cards_one">
-          <img src="common/image/flame-remote-working.gif" alt="flame-success" class="gif">
+</div>
+<div class="cards_two">
+<img src="common/image/flame-searching.gif" alt="flame-success" class="gif">
+<img src="common/image/cards4.png" alt="cards4" class="cards_logo">
+<h1>GRAPHIQUE ET WEBDESIGN</h1>
+<p>Logo, template WEB, newsletters</p>
+</div>
+<div class="cards_one">
+<img src="common/image/flame-remote-working.gif" alt="flame-success" class="gif">
 
-          <img src="common/image/cards5.png" alt="cards5" class="cards_logo">
-          <h1>Interface d'administration</h1>
-          <p>Outils spécifiques au bon fonctionnement de votre entreprise.</p>
+<img src="common/image/cards5.png" alt="cards5" class="cards_logo">
+<h1>Interface d'administration</h1>
+<p>Outils spécifiques au bon fonctionnement de votre entreprise.</p>
 
+</div>
+<div class="cards_two">
+<img src="common/image/flame-uploading.gif" alt="flame-success" class="gif">
+<img src="common/image/cards6.png" alt="cards6" class="cards_logo">
+<h1>Référencement naturel</h1>
+<p>Affichage sémantique des informations, des pages propres pour un
+  référencement optimal.</p>
+</div>
         </div>
-        <div class="cards_two">
-          <img src="common/image/flame-uploading.gif" alt="flame-success" class="gif">
-          <img src="common/image/cards6.png" alt="cards6" class="cards_logo">
-          <h1>Référencement naturel</h1>
-          <p>Affichage sémantique des informations, des pages propres pour un
-            référencement optimal.</p>
-        </div>
+        
+        
       </div>
     </div>
 
@@ -192,8 +198,13 @@
 
     </div>
     <div class="contact_me">
+    <div class="title">
+          <h1>Contact me
+          </h1>
+          <div class="span_orange"></div>
+        </div>
       <img src="common/image/flame-1849.png" alt="">
-
+<div class="grid_contact">
       <form action="" method="post" class="form_contat">
         <div class="form_nom_prenom">
 
@@ -215,19 +226,30 @@
 <input type="email" name="email" id="email" required placeholder=" Votre email"class="mail">
           </label>
 
-          <label for="number">
-             <input type="number" name="number" id="number" required placeholder=" Votre numéro de téléphone "class="phone"> 
+          <label for="phone">
+             <input type="tel" name="phone" id="phone" required placeholder=" Votre numéro de téléphone "class="phone"> 
             </label>
         </div>
           <div class="form_message">
             
             <label for="text" class="message" >
-              <input type="text" name="text" id="text" required placeholder=" Ecriver votre message !" class="message">
+              <!-- <textarea type="text" name="tel" id="tel" required placeholder=" Ecriver votre message !" class="message"> -->
+              <textarea class="message" cols="50" rows="10" name="message" placeholder=" Merci de détailler le plus possible votre besoin afin de faciliter nos futurs échanges."></textarea>
             </label>
-          
+          <div class="form_button_case">
+            <label for="condition">
+              
+              <p class="condition"> <input type="checkbox" name="condition" id="condition" class="case"> En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la demande de contact et de la relation commerciale qui peut en découler.</p>
+            </label>
+            <label for="submit" >
+              <input type="submit" value="Envoyer" class="btn_contact">
+            </label>
+          </div>
+          <img src="common/image/flame-1235.png" alt="" class="ifg">
         </div>
 
       </form>
+    </div>
     </div>
   </main>
   <script src="common/js/app.js"></script>

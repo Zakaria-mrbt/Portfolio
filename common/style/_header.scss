@@ -1,5 +1,86 @@
 @include googleFonts(Rubik++Mono++One);
 @include googleFonts(Roboto);
+@media screen and (min-width:781px) {
+header{
+    font-family: 'roboto';
+        position: relative;
+        .header_contact {
+            display: flex;
+            flex-direction: initial;
+            font-family: 'roboto';
+            margin: 5px 15px;
+            justify-content: end;
+            img {
+                width: 15px;
+                height: auto;
+                margin-right: 10px;
+            }
+            p {
+                margin-bottom: 5px;
+                color: white;
+                font-size: 18px;
+                margin-left: 20px;
+            }
+        }
+        // Header navbar
+        .header_nav {
+            
+            
+            //Background navbar  
+            .blue {
+                background-color: #355AB9;
+                height: 70px;
+            }
+            // Logo navbar
+            .logo {
+                width: 150px;
+                height: auto;
+                position: absolute;
+                top: 35px;
+                left: 20px;
+            }
+            .header_navbar {
+                position: absolute;
+                width: 100%;
+                height: auto;
+               bottom: 10px;
+               
+                .header_navlinks,
+                a,
+                li {
+                    // position: relative;
+                    display: flex;
+                    justify-content: end;
+                    color: #FFFFFF;
+                    list-style: none;
+                    text-decoration: none;
+                    text-align: center;
+                    margin-left: 20px;
+                    // bottom: 30px;
+                    
+
+                }
+                // Button
+                .hire {
+                    // position: relative;
+                    font-size: 12px;
+                    color: #FFFFFF;
+                    // bottom: 30px;
+                    background-color: #FF6C02;
+                    width: 120px;
+                    height: 25px;
+                    border-radius: 50px;
+                    border: none;
+                    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+                    margin-right: 20px;
+                }
+
+            }
+
+        }
+}
+
+}
 
 @media screen and (max-width:780px) {
 
@@ -22,6 +103,7 @@
                 color: white;
                 font-size: 18px;
             }
+            
         }
         // Header navbar
         .header_nav {
